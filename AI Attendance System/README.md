@@ -17,50 +17,50 @@ The purpose is to Build A Real-Time Face Recognition End-To-End Project.
 - OpenCV
         - OpenCV was designed for computational efficiency and with a strong focus on     real-time applications. So, it’s perfect for real-time face recognition using a camera.
 
-Requirements
--- Tools
-	1. Install python 3
-	2. Any IDE's, I have used Pycharm IDE.
+## Requirements
+- Tools
+	- Install python 3
+	- Any IDE's, I have used Pycharm IDE.
 
-Modules required
-MAIN-
-    -OpenCV(CV2)
-    -OS
-    -Datetime
-    -numpy
-    -face-recognition
-Support
-    -cmake
-    -colorama
-    -dlib
-    -enum34
-    -nicer
-    -pip
-    -pkt
-    -pytz
-    -setuptools
-    -typing
+## Modules required
+MAIN 
+    - OpenCV(CV2)
+    - OS
+    - Datetime
+    - numpy
+    - face-recognition
+## Support
+    - cmake
+    - colorama
+    - dlib
+    - enum34
+    - nicer
+    - pip
+    - pkt
+    - pytz
+    - setuptools
+    - typing
 
-- Steps to run:
-1. Install python 3
-2. Open the IDE or python console
-3. Enter $ python3 File_name.py to run the code.
+## Steps to run:
+- Install python 3
+- Open the IDE or python console
+- Enter $ python3 File_name.py to run the code.
 
-IDE:-
+## IDE:-
   I have used PyCharm, it is a dedicated Python Integrated Development Environment (IDE)
 providing a wide range of essential tools for Python developers, tightly integrated
 to create a convenient environment for productive Python, web, and data science development.
 
-Steps to run:
-st-1:
+## Steps to run:
+- st-1:
     Under files -> settings -> interpreter install all modules
-st-2:
+- st-2:
     set Face_recognition1.py as the script file in path
-st-3:
+- st-3:
     Add all Images to be trained under train_images folder in format
     Name.jpg or Name.jpeg
 
-st-4:
+- st-4:
     You are set up can run the script
   
 ## Author
