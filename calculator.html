@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>Calculator</title>
+		
+			  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		
+		<script>
+			var expression = "";
+			function getInput(ele){
+				expression+=ele;
+				deleteDisplay(expression)
+			}
+			
+			function solve(){
+				var data=document.getElementById("input_field").value;
+				var answer = eval(data);
+				deleteDisplay(answer);
+				expression="";
+			}
+			function deleteDisplay(str){
+				document.getElementById("input_field").value = str;
+				if (str=="0"){
+						expression="";
+					}
+			}
+		</script>
+		
+		
+		
+		<style>
+			#mainContainer{
+				top:25%;
+				
+			}
+			<!--tr th{
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+			tr td{
+			   padding: 0 !important;
+			   margin: 0 !important;
+			}-->
+			
+			.btn:focus {
+			   outline: none;
+			   box-shadow: none;
+			}
+		
+		</style>
+	</head>
+	
+	<body class="bg-dark">
+		<div class="container col-sm-3" id="mainContainer">
+			<table class="table table-bordered table-condensed" id="table_container">
+				<thead>
+					<tr>
+						<th colspan="4"><input type="text" id="input_field" class="form-control rounded-0 text-right" value="0"></th>
+					</tr>
+				</thead>
+					
+				<tbody>
+					<tr>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('9')">9</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('8')">8</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('7')">7</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-primary rounded-0" onClick="getInput('+')">+</button></td>
+					</tr>
+					<tr>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('6')">6</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('5')">5</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('4')">4</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-primary rounded-0" onClick="getInput('-')">-</button></td>
+					</tr>
+					<tr>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('3')">3</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('2')">2</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('1')">1</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-primary rounded-0" onClick="getInput('*')">*</button></td>
+					</tr>
+					<tr>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('0')">0</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-warning rounded-0" onClick="getInput('.')">.</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-danger rounded-0" onClick="deleteDisplay('0')">C</button></td>
+						<td><button class="btn btn-lg col-sm-12 bg-primary rounded-0" onClick="getInput('/')">/</button></td>
+					</tr>
+					
+					<tr>
+						<td colspan="4"><button class="btn btn-lg col-sm-12 bg-success rounded-0" onClick="solve()">=</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
