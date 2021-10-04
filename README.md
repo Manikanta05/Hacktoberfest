@@ -15,6 +15,7 @@
 ## Rules
 - Motivation Quotes is acceptable.
 - Don't use filthy words and be welcome for beginners and other people in this community.
+- Add your **names** with your **github links** in respective README.md. Ex:[Name-link]
 
 ---
 
