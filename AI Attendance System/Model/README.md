@@ -16,46 +16,8 @@ The purpose is to Build A Real-Time Face Recognition End-To-End Project.
 - This project is done with this fantastic “Open Source Computer Vision Library”, the OpenCV.
 - OpenCV
         - OpenCV was designed for computational efficiency and with a strong focus on     real-time applications. So, it’s perfect for real-time face recognition using a camera.
-<br>Documentation-  <https://docs.opencv.org/master/>
-
-## Workflow of the Project
-* There are 4 phases in this project.
-    - Face Detection and Data Gathering
-    - Train the Recognizer
-    - Face Recognition 
-    - Record Name and Time in an external CSV file.
-
-* Working Block Diagram
-<img src="../Face_Recognition/Output/block Diagram.png">
-         
- ## Execution 
- - OpenCV Installation On windows<br>
- <code>pip install opencv-python</code><br>
- - Import the package<br>
- <code>import cv2</code><br>
-
-All packages contain Haar cascade files. cv2.data.haarcascades can be used as a shortcut to the data folder. <br>
-For example: 
-<code>cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")</code><br>
-- Download the Source code, open in Pycharm IDE and configure the scripy file under the python interpreter
-- Run the script
-
- ## Output:
-- Demo 1  
-<img src="../Face_Recognition/Output/Output1.png">
-
-- Demo 2 
-<img src="../Face_Recognition/Output/Output2.png">
-
-- Demo 3 
-<img src="../Face_Recognition/Output/Outout3.png">
-
-- CSV data 
-        - Name and time
-<img src="../Face_Recognition/Output/Name_list.png">
-<img src="../Face_Recognition/Output/Name_list_entry.png">
 
 ## Author
 [Sanjay N T](https://github.com/sanjay-nt)
-:Date: 2021-08-04
+:Date: 2021-10-04
 
