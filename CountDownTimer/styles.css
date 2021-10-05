@@ -53,6 +53,10 @@ h3{
     margin: 1rem;
 }
 
+input{
+    border-style: none;
+}
+
 .btn{
   border: none;
   color: white;
@@ -66,19 +70,10 @@ h3{
 }
 
 .btn-start {background-color: #10B981;} /* Green */
-.btn-stop {background-color: #DC2626;} /* red */
+.btn-stop {background-color: #DC2626;} /* Red */
 .btn-reset {background-color: #3B82F6;} /* Blue */
 
 .countdown-image{
     height: 50vh;
     padding: 1.5rem;
 }
-
-input{
-    border-style: none;
-}
-
-/* .btn-start:disabled{
-    cursor: not-allowed;
-    pointer-events: none;
-} */

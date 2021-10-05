@@ -6,7 +6,7 @@ var hour = document.querySelector(".hour");
 var minute = document.querySelector(".minute");
 var second = document.querySelector(".second");
 
-//store a reference to the startTimer variable
+// reference stored
 var startTimer = null;
 
 // time manipulation
