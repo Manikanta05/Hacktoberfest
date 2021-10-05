@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px red solid; */
+}
+
+/* General Styling */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-weight: 300;
+  background-color: #6b01ff;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.url-shortener-wrapper {
+  background-color: white;
+  /* height: 50%; */
+  width: 50%;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 3rem;
+  font-size: 4.5rem;
+}
+
+.h-mobile {
+  display: none;
+}
+
+.form {
+  margin-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+input {
+  width: 70%;
+  padding: 1.5rem 2rem 1.25rem 2rem;
+  border-radius: 25px;
+  border: 1px #333 solid;
+  margin-right: 1rem;
+}
+
+input:focus {
+  border: 1px #4a00b2 solid;
+}
+
+input::placeholder {
+  font-size: 1.7rem;
+}
+
+.btn {
+  background-color: #6b01ff;
+  color: white;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #4a00b2;
+}
+
+.hidden {
+  display: none;
+}
+
+.link {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  margin-top: 2rem;
+  padding: 0rem 1rem;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  input {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .url-shortener-wrapper {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .url-shortener-wrapper {
+    width: 80%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  input {
+    margin-top: -2rem;
+    margin-bottom: 1.25rem;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .h-normal {
+    display: none;
+  }
+
+  .h-mobile {
+    display: block;
+    line-height: 4rem;
+  }
+
+  h3 {
+    font-size: 3.75rem;
+  }
+  .btn {
+    width: 80%;
+  }
+}
