@@ -36,4 +36,14 @@
     <li><B><p><a href="https://hacktoberfest.digitalocean.com/resources?wvideo=wahflezoy6"><img src="https://embed-fastly.wistia.com/deliveries/c562a4b85d208c9100716156dd6c3f90.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=1e71e7e0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://hacktoberfest.digitalocean.com/resources?wvideo=wahflezoy6">Hacktoberfest 2021</a></p>
 </b></li>
 </ol>
-    <div align="center"> 🎊🎊🎊HAPPY HACKING🎊🎊🎊 </div>
+    
+---
+    
+## Swags of Hacktoberfest:
+- Many of the candidates get attracted towards hacktoberfest to get swags . So, after 4 successfully merged pull request as for 2021 you will be eligible to get a Hacktoberfest T-shirt and Some stickers on your doorstep.
+ 
+     <li><B><p><img src="https://miro.medium.com/max/1050/1*4JctIO7irt8hFxBmTvUpiQ.jpeg" width="400" height="225" style="width: 400px; height: 225px;" alt="tshirt image"></a></p><p><img src="https://miro.medium.com/max/1050/1*jkffr74bq5RsQ_xqDhgqYQ.jpeg" width="400" height="225" style="width: 400px; height: 225px;" alt="stickers image"></p>
+</b></li>
+    
+    
+<div align="center"> 🎊🎊🎊HAPPY HACKING🎊🎊🎊 </div>
