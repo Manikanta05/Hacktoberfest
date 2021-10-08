@@ -1,1 +1,2 @@
+## BMI calculator
 Calculate your BMI - The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. Use the "Metric Units" tab for the International System of Units or the "Other Units" tab to convert units into either US or metric units.
