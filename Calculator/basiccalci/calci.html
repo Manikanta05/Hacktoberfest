@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculator </title>
+        
+        <style>
+            *{margin: 0; padding: 0;}
+            .entire{
+                background-image: url("thme.jpg");
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            button{
+                height: 70px;
+                width: 70px;
+                border-radius: 20%;
+                font-size: 1.0rem;
+                margin-left: 35px;
+            }
+            .table{
+                margin-left: 500px;
+                margin-top: 60px;
+                height: 520px;
+                width: 520px;
+                background-color: rgba(0, 0, 0, 0.856);
+                border-radius: 10%;
+            }
+            
+        </style>
+    
+    </head>
+    
+    <body>
+        <div class="entire" >
+            <h1 style="padding-top: 45px; text-align: center; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 3.0rem;"> BASIC CALCULATOR </h1>
+            <div class="calci">
+                 <div class="buttons" >
+                    <table class="table">
+                         <tr>
+                             <td>
+                                <button class="btn" id="1" value="1" onclick="one()">1</button>
+                                 <button class="btn" id="2" value="2" onclick="two()">2</button>
+                                <button class="btn" id="3" value="3" onclick="three()">3</button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="fun" id="+" onclick="plus()" style="background-color: red;font-size: 1.0rem;">ADD</button>
+                            </td>
+                         </tr>
+
+                         <tr>
+                            <td>
+                                <button class="btn" id="4" onclick="four()">4</button>
+                                <button class="btn" id="5" onclick="five()">5</button>
+                                <button class="btn" id="6" onclick="six()">6</button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="fun id="-" onclick="sub()" style="background-color:blue;font-size: 1.0rem;">SUB</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="btn" id="7" onclick="seven()">7</button>
+                                <button class="btn" id="8" onclick="eight()">8</button>
+                                <button class="btn" id="9" onclick="nine()">9</button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      
+                                <button class="fun" id="*" onclick="mul()" style="background-color: green; font-size: 1.0rem;">MUL</button>
+                            </td>
+                         </tr>
+
+                        <tr>
+                            <td>
+                                <button class="btn" id="%" onclick="mod()" style="background-color: sienna;font-size: 1.0rem;">MOD</button>
+                                <button class="btn" id="0" onclick="zero()">0</button>
+                                <button class="fun" id="/" onclick="div()" style="background-color: sienna;font-size: 1.0rem;">DIV</button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="fun" id="=" onclick="equals()" style="background-color: yellow;font-size: 1.0rem;">EQU</button> 
+                            </td>
+                        </tr>
+
+                    </table>                          
+                </div>
+            </div>
+        </div>
+     <script>
+            var a,b,c,d,e,f,g,h,i,j;
+            var p,s,m,di,eq,od;
+            var click;
+            var aa,bb,cc,dd,ee,ff,gg,hh,ii,jj;    
+            var pp,ss,mm,ddi,modd,eqq;
+            let stk = [];
+
+            function one()
+            {
+                a=document.getElementById("1");
+                a=1;
+                aa= true;
+                stk.push(a);
+                display();
+                aa=false;
+            }
+            function two()
+            {
+                b=document.getElementById("2");
+                b=2;
+                bb=true;
+                stk.push(b);
+                display();
+                bb=false; 
+            }
+            function three()
+            {
+                c=document.getElementById("3");
+                c=3;
+                cc=true;
+                stk.push(c);
+                display();
+                cc=false;               
+            }
+            function four()
+            {
+                d=document.getElementById("4");
+                d=4;
+                dd=true;
+                stk.push(d);
+                display();
+                dd=false;                
+            }
+            function five()
+            {
+                e=document.getElementById("5");
+                e=5;
+                ee=true;
+                stk.push(e);
+                display();
+                ee=false;                
+            }
+            function six()
+            {
+                f=document.getElementById("6");
+                f=6;
+                ff=true;
+                stk.push(f);
+                display();
+                ff=false;                
+            }
+            function seven()
+            {
+                g=document.getElementById("7");
+                g=7;
+                gg=true;
+                stk.push(g);
+                display();
+                gg=false;                
+            }
+            function eight()
+            {
+                h=document.getElementById("8");
+                h=8;
+                hh=true;
+                stk.push(h);
+                display();
+                hh=false;
+            }
+            function nine()
+            {
+                i=document.getElementById("9");
+                i=9;
+                ii=true;
+                stk.push(i);
+                display();
+                ii=false;
+            }
+            function zero()
+            {
+                j=document.getElementById("0");
+                j=0;
+                jj=true;
+                stk.push(j);
+                display();
+                jj=false;
+            }
+            function plus()
+            {
+                p=document.getElementById("+");
+                p="+";
+                pp=true;
+                stk.push(p);
+                display();
+                pp=false;
+            }
+            function sub()
+            {
+                s=document.getElementById("-");
+                s="-";
+                ss=true;
+                stk.push(s);
+                display();
+                ss=false;
+            }
+            function mul()
+            {
+                m=document.getElementById("*");
+                m="*";
+                mm=true;
+                stk.push(m);
+                display();
+                mm=false;
+            }
+            function div()
+            {
+                di=document.getElementById("/");
+                di="/";
+                ddi=true;
+                stk.push(di);
+                display();
+                ddi=false;
+            }
+            function mod()
+            {
+                od=document.getElementById("%");
+                od="%";
+                modd=true;
+                stk.push(od);
+                display();
+                modd=false;
+            }
+
+            function display()
+            {
+                if(aa==true){return;}
+                else if(bb==true){return;}
+                else if(cc==true){return;}
+                else if(dd==true){return;}
+                else if(ee==true){return;}
+                else if(ff==true){return;}
+                else if(gg==true){return;}
+                else if(hh==true){return;}
+                else if(ii==true){return;}
+                else if(jj==true){return;}
+                else if(pp==true){return;}
+                else if(ss==true){return;}
+                else if(mm==true){return;}
+                else if(ddi==true){return;}
+                else if(modd==true){return;}
+            }
+            function equals()
+            {
+                
+                for(var i=0;i<stk.length;i++)
+                    {
+                      if(stk[1]=="+")
+                      {
+                        var op2=stk.pop();
+                        stk.pop();
+                        var op1=stk.pop();
+                        var res=op2+op1;
+                        alert(res);
+                      }    
+                      else if(stk[1]=="-")
+                      {
+                        var op2=stk.pop();
+                        stk.pop();
+                        var op1=stk.pop();
+                        var res=op1-op2;
+                        alert(res);
+                      } 
+                      else if(stk[1]=="*")
+                      {
+                        var op2=stk.pop();
+                        stk.pop();
+                        var op1=stk.pop();
+                        var res=op2*op1;
+                        alert(res);
+                      } 
+                      else if(stk[1]=="/")
+                      {
+                        var op2=stk.pop();
+                        stk.pop();
+                        var op1=stk.pop();
+                        var res=op1/op2;
+                        alert(res);
+                      } 
+                      else if(stk[1]=="%")
+                      {
+                        var op2=stk.pop();
+                        stk.pop();
+                        var op1=stk.pop();
+                        var res=op1%op2;
+                        alert(res);
+                      } 
+                    }
+            }
+        
+        </script>
+
+    </body>
+</html>
