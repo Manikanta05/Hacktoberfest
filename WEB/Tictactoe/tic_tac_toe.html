@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tic Tac Toe </title>
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            *{margin: 0; padding: 0;}
+            img{
+                height: 35vh;
+                margin-top: 42px;
+                margin-left: 400px;
+            }
+            section{
+                background-image: url("cv.jpg");
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            .logo{
+                width: 750px;
+                height: 20vh;
+                margin-top: 10px;
+            }
+            table{
+                margin-left: 600px;
+                padding-top: 60px;
+                height: 60vh;
+                word-spacing: 50px;
+            }
+            button{
+                border: black;
+                border-radius: 20%;
+                background-color: black;
+                width: 80px;
+                height: 70px; 
+                color: blanchedalmond;
+            }
+            .done
+            {
+                background-color: green;
+                margin-left: 710px;
+                height: 50px;
+                border-radius: 0px;
+                color: blanchedalmond;
+                font-size: 1.8rem;
+                width: 150px;
+                margin-top: 30px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <img class="logo" src="bg2.jpg">
+            <table>
+                <tr>
+                    <td>
+                        <button id = "1" , onclick="fn1()"> <br>  </br> </button>
+                        <button id = "2" , onclick="fn2()"> <br>  </br> </button>
+                        <button id = "3" , onclick="fn3()"> <br>  </br> </button>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <button id = "4" , onclick="fn4()"> <br>  </br> </button>
+                        <button id = "5" , onclick="fn5()"> <br>  </br> </button>
+                        <button id = "6" , onclick="fn6()"> <br>  </br> </button>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <button id = "7" , onclick="fn7()"> <br>  </br> </button>
+                        <button id = "8" , onclick="fn8()"> <br>  </br> </button>
+                        <button id = "9" , onclick="fn9()"> <br>  </br> </button>
+                    </td>
+                </tr>
+                
+            </table>
+            <button class="done" , onclick="ok()"> SUBMIT </button>
+        </section>
+    
+
+    
+    
+   <script>
+        var clik = true;
+        var x ,y ,z;
+        var a, b, c;
+        var p, q, r;
+        function fn1()
+        { 
+            x = document.getElementById("1");
+            x.style.color = "red";
+            x.style.fontSize = " 30px";
+            if(clik==true)
+                {x.innerText="X"; clik=false;}
+            else
+                {x.innerText="0"; clik=true;}
+        }
+       function fn2()
+       {
+            y = document.getElementById("2");
+            y.style.color = "red";
+            y.style.fontSize = " 30px";
+            if(clik==true)
+                {y.innerText="X"; clik=false;}
+            else
+                {y.innerText="0"; clik =true;}   
+       }
+
+       function fn3()
+       {
+            z = document.getElementById("3");
+            z.style.color = "red";
+            z.style.fontSize = " 30px";
+            if(clik==true)
+                {z.innerText="X"; clik=false;}
+            else
+                {z.innerText="0"; clik=true;}
+       }
+
+       function fn4()
+       {
+            a = document.getElementById("4");
+            a.style.color = "red";
+            a.style.fontSize = " 30px";
+            if(clik==true)
+                {a.innerText="X"; clik=false;}
+           else 
+                {a.innerText="0"; clik=true;}
+       }
+
+       function fn5()
+       {
+            b = document.getElementById("5");
+            b.style.color = "red";
+            b.style.fontSize = " 30px";
+            if(clik==true)
+                {b.innerText="X"; clik=false;}
+           else
+                {b.innerText="0"; clik=true;}
+       }
+
+       function fn6()
+       {
+            c = document.getElementById("6");
+            c.style.color = "red";
+            c.style.fontSize = " 30px";
+            if(clik==true)
+                {c.innerText="X"; clik=false;}
+           else
+                {c.innerText="0"; clik=true;}
+       }
+
+       function fn7()
+       {
+            p = document.getElementById("7");
+            p.style.color = "red";
+            p.style.fontSize = " 30px";
+            if(clik==true)
+                {p.innerText="X"; clik=false;}
+           else 
+                {p.innerText="0"; clik=true;}
+       }
+
+       function fn8()
+       {
+            q = document.getElementById("8");
+            q.style.color = "red";
+            q.style.fontSize = " 30px";
+            if(clik==true)
+                {q.innerText="X"; clik=false;}
+           else
+                {q.innerText="0"; clik=true;}
+       }
+
+       function fn9()
+       {
+            r = document.getElementById("9");
+            r.style.color = "red";
+            r.style.fontSize = " 30px";
+            if(clik==true)
+                {r.innerText="X"; clik=false;}
+           else 
+                {r.innerText="0"; clik=true;}
+       }
+
+       function ok()
+       {
+           document.getElementsByClassName("done");
+
+           var aa=document.getElementById("1");
+           var bb=document.getElementById("2");
+           var cc=document.getElementById("3");
+           var dd=document.getElementById("4");
+           var ee=document.getElementById("5");
+           var ff=document.getElementById("6");
+           var gg=document.getElementById("7");
+           var hh=document.getElementById("8");
+           var ii=document.getElementById("9"); 
+
+           if((aa.innerHTML=="X") && (bb.innerHTML=="X") && (cc.innerHTML=="X")) { alert( " WINNER IS: X");}
+           else if((dd.innerHTML=="X") && (ee.innerHTML=="X") && (ff.innerHTML=="X")) { alert(" WINNER IS : X");}
+           else if((gg.innerHTML=="X") && (hh.innerHTML=="X") && (ii.innerHTML=="X")) { alert(" WINNER IS : X");}
+           else if((aa.innerHTML=="X") && (dd.innerHTML=="X") && (gg.innerHTML=="X")) { alert(" WINNER IS : X");}
+           else if((bb.innerHTML=="X") && (ee.innerHTML=="X") && (hh.innerHTML=="X")) { alert(" WINNER IS : X");}
+           else if((cc.innerHTML=="X") && (ff.innerHTML=="X") && (ii.innerHTML=="X")) { alert(" WINNER IS : X");}
+           else if((aa.innerHTML=="X") && (ee.innerHTML=="X") && (ii.innerHTML=="X")) { alert(" WINNER IS : X");}
+           else if((cc.innerHTML=="X") && (ee.innerHTML=="X") && (gg.innerHTML=="X")) { alert(" WINNER IS : X");}
+
+           else if((aa.innerHTML=="0") && (bb.innerHTML=="0") && (cc.innerHTML=="0")) { alert( " WINNER IS: 0");}
+           else if((dd.innerHTML=="0") && (ee.innerHTML=="0") && (ff.innerHTML=="0")) { alert(" WINNER IS : 0");}
+           else if((gg.innerHTML=="0") && (hh.innerHTML=="0") && (ii.innerHTML=="0")) { alert(" WINNER IS : 0");}
+           else if((aa.innerHTML=="0") && (dd.innerHTML=="0") && (gg.innerHTML=="0")) { alert(" WINNER IS : 0");}
+           else if((bb.innerHTML=="0") && (ee.innerHTML=="0") && (hh.innerHTML=="0")) { alert(" WINNER IS : 0");}
+           else if((cc.innerHTML=="0") && (ff.innerHTML=="0") && (ii.innerHTML=="0")) { alert(" WINNER IS : 0");}
+           else if((aa.innerHTML=="0") && (ee.innerHTML=="0") && (ii.innerHTML=="0")) { alert(" WINNER IS : 0");}
+           else if((cc.innerHTML=="0") && (ee.innerHTML=="0") && (gg.innerHTML=="0")) { alert(" WINNER IS : 0");}
+
+           else{alert(" Match Draw, Refresh to start again ..!!");}
+    }
+    </script>
+    </body>
+</html>
